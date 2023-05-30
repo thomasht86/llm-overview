@@ -9,7 +9,7 @@ Meetup for SopraSteria 2023-05-30
 - Create Skynet and take over the world 👩‍💻🌎
 
 ## Requirements
-Create your preferred virtual environment with venv, conda, pipenv, etc. and install the requirements:
+Create your preferred virtual environment (`python 3.10`) with venv, conda, pipenv, etc. and install the requirements:
 ```bash
 pip install -r requirements.txt
 ```
