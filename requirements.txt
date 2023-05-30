@@ -1,0 +1,4 @@
+guidance
+openai
+scipy
+ipykernel
