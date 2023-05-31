@@ -34,7 +34,7 @@ Finetune on examples of (prompt, responses).
 
 This is "doable" in an enterprise setting, with reasonable effort.
 
-- ex. Vicuna-13B
+- ex. `vicuna-13b`
 - For inspiration, see [this](https://modal.com/docs/guide/slack-finetune)
 
 Can de done on a single A-100GPU with 20GB memory for ~7B-scale models.
@@ -44,8 +44,8 @@ Can de done on a single A-100GPU with 20GB memory for ~7B-scale models.
 Approach: Ask humans to discriminate (rank) options.
 Result is Chat (instruct)-models that are much better at "doing what you want".
 
-- ChatGPT ("gpt-4", "gpt-3.5-turbo")
-- Claude etc.
+- ChatGPT (`gpt-4`, `gpt-3.5-turbo`)
+- [Claude](https://www.anthropic.com/product) etc.
 
 ### Some notes on scale
 
@@ -75,14 +75,18 @@ NB! `gpt-4` is significantly better than `gpt-3.5-turbo` for reasoning and compl
 ### Mode 1B - Interacting via API's 👩‍💻
 
 This gives more control.
-Some great examples can be found in [guidance](https://github.com/microsoft/guidance)-repo.
+Some great examples can be found here:
+
+- [OpenAI Cookbook](https://github.com/openai/openai-cookbook)
+- [guidance](https://github.com/microsoft/guidance)
 
 ### Mode 2 - Giving long-term memory 🧠
 
 Rule-of-thumb: Models have perfect short-term memory, but long-term memory is blurry.
 It is your task to give the necessary context to the model!
 
-- [Demo application](https://npd.fabriqai.com/)
+- [NPD-application](https://npd.fabriqai.com/)
+- https://www.chatbase.co/chatbot/w77ULIXQDoPQTc7BZU4_K
 - Combining with search/retrieval
 - Vector DB + Embeddings
   - [pinecone](https://www.pinecone.io/)
@@ -102,6 +106,38 @@ It is your task to give the necessary context to the model!
   - [OpenAI plugins](https://platform.openai.com/docs/plugins/introduction)
   - [langchain](https://docs.langchain.com/docs/)
   - [llamaindex](https://gpt-index.readthedocs.io/en/latest/index.html)
+
+## Some recommendations (from Karpathy's talk)
+
+### Goal 1: Achieve your top possible performance 
+
+- Use GPT-4 
+- Use prompts with detailed task context, relevant information, instructions 
+- "what would you tell a task contactor if they can't email you back?" 
+- Retrieve and add any relevant context or information to the prompt 
+- Experiment with prompt engineering techniques (previous slides) 
+- Experiment with few-shot examples that are 
+  - a. relevant to the test case
+  - b. diverse (if appropriate) 
+- Experiment with tools/plugins to offload tasks difficult for LLMs (calculator, code execution, ... ) 
+- Spend quality time optimizing a pipeline/ "chain" 
+- If you feel confident that you maxed out prompting, consider SFT data collection + finetuning 
+- Expert/ fragile/ research zone: consider RM data collection, RLHF finetuning 
+
+### Goal 2: Optimize costs 
+
+- Once you have the top possible performance, attempt cost saving measures 
+(e.g. use GPT-3.5, find shorter prompts, etc.)
+
+#### Comments from me:
+
+- If privacy is a concern, use Azure OpenAI service.
+- For simple tasks, `gpt-3.5-turbo` is often good enough and much faster.
+- Monitor progress of smaller and Open Source-models
+  - My bold prediction is that before we see 2024, you will be able to run models comparable to `gpt-3.5-turbo` on a CPU.
+- Build modular stuff, so you can reuse it when you upgrade models, data etc.
+- Remember that gettting acquainted with the tools and the ecosystem takes time.
+- Start exploring, there is no doubt that learning this will be valuable in the future.
 
 ## Requirements
 
