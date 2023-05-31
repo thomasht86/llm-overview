@@ -6,3 +6,5 @@ duckduckgo-search
 httpx[socks]
 httpcore[socks]
 langchain
+pandas
+openpyxl
