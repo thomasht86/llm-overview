@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  jupytersrv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: my_service
+    volumes:
+      - .:/llm
+    ports:
+      - 8888:8888
+
+
