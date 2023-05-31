@@ -1,7 +1,7 @@
 # LLM's - An overview for developers
 
-Keeping up with the latest progress in AI is hard. 
-This is my attempt to create an overview that may serve as an introduction to those getting started with using LLM's to create your own applications. 
+Keeping up with the latest progress in AI is hard.
+This is my attempt to create an overview that may serve as an introduction to those getting started with using LLM's to create your own applications.
 
 ## Introduction
 
@@ -10,10 +10,17 @@ Links may break, become outdated and new stuff that I have missed may have been 
 
 ## Model types
 
-The image below is stolen from Andrey Karpathy's amazing talk - [State of GPT]() at MS Build 2023.
+The image below is stolen from Andrey Karpathy's amazing talk - [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A) at MS Build 2023.
 I strongly encourage you to watch it.
 
 ![GPT Training](https://github.com/thomasht86/llm-meetup/assets/24563696/e7a6fc7e-dc72-4dce-852a-59ac31936708)
+
+### Model overview
+
+- "Open source" models
+  - https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
+- OpenAI models
+  - https://platform.openai.com/docs/models/overview
 
 ### Base models
 
@@ -21,7 +28,7 @@ I strongly encourage you to watch it.
 - `openlm-research/open_llama_7b_700bt_preview`
 - etc.
   
-### + Supervised Finetuning (SFT) 
+### + Supervised Finetuning (SFT)
 
 Finetune on examples of (prompt, responses).
 
@@ -35,17 +42,10 @@ Can de done on a single A-100GPU with 20GB memory for ~7B-scale models.
 ### + Reinforcement learning with Human Feedback (RLHF)
 
 Approach: Ask humans to discriminate (rank) options.
-Result is Chat (instruct) - models
+Result is Chat (instruct)-models that are much better at "doing what you want".
 
 - ChatGPT ("gpt-4", "gpt-3.5-turbo")
 - Claude etc.
-
-### Model overview
-
-- "Open source" models
-  - https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
-- OpenAI models
-  - https://platform.openai.com/docs/models/overview
 
 ### Some notes on scale
 
@@ -59,7 +59,7 @@ Some of the approaches:
 
 ## Modes
 
-I find it useful to think about separate modes for the models. 
+I find it useful to distinguish between different modes of using LLM's.
 
 ### Mode 1A - "Out of the box" 💬
 
@@ -105,6 +105,7 @@ It is your task to give the necessary context to the model!
 
 ## Requirements
 
+If you want to run the notebooks. Youk will need an (Azure) OpenAI API key.
 Create your preferred virtual environment (`python 3.10`) with venv, conda, pipenv, etc. and install the requirements:
 
 ```bash
