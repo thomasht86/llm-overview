@@ -72,6 +72,8 @@ NB! `gpt-4` is significantly better than `gpt-3.5-turbo` for reasoning and compl
     - Think step-by-step
     - [Chain-of-thought](https://arxiv.org/abs/2201.11903) - [Tree-of-Thought](https://arxiv.org/abs/2305.08291) etc.
   
+**Demo**
+- https://chat.openai.com/share/751fcf8f-e94e-4fc4-a9d9-2762086f8c5b
 ### Mode 1B - Interacting via API's 👩‍💻
 
 This gives more control.
@@ -79,6 +81,9 @@ Some great examples can be found here:
 
 - [OpenAI Cookbook](https://github.com/openai/openai-cookbook)
 - [guidance](https://github.com/microsoft/guidance)
+
+**Demo**
+- [guidance_intro.ipynb](./guidance_intro.ipynb)
 
 ### Mode 2 - Giving long-term memory 🧠
 
