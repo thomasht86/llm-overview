@@ -98,6 +98,8 @@ It is your task to give the necessary context to the model!
   - [weaviate](https://weaviate.io/)
   - etc.
   - NB: Enables search across different modalities, e.g. text, images, audio, etc.
+  - Generate better embeddings if ambiguous query
+    - E.g. [HyDe](https://github.com/texttron/hyde)
 
 - Retrieval of structured data
   - [Ask4data](https://databutton.com/v/3po3yed0)
@@ -146,7 +148,7 @@ It is your task to give the necessary context to the model!
 
 ## Requirements
 
-If you want to run the notebooks. Youk will need an (Azure) OpenAI API key.
+If you want to run the notebooks, you will need an (Azure) OpenAI API key.
 Create your preferred virtual environment (`python 3.10`) with venv, conda, pipenv, etc. and install the requirements:
 
 ```bash
