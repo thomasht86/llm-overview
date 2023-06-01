@@ -3,8 +3,8 @@ openai
 scipy
 ipykernel
 duckduckgo-search
-httpx[socks]
-httpcore[socks]
 langchain
 pandas
 openpyxl
+plotly
+nbformat>=4.2.0
