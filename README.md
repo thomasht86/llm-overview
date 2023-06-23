@@ -113,6 +113,7 @@ It is your task to give the necessary context to the model!
   - [OpenAI plugins](https://platform.openai.com/docs/plugins/introduction)
   - [langchain](https://docs.langchain.com/docs/)
   - [llamaindex](https://gpt-index.readthedocs.io/en/latest/index.html)
+  - [Semantic Kernel (Microsoft)](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
 
 ## Some recommendations (from Karpathy's talk)
 
